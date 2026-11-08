@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Chef Tucker | Private Chef & Bespokes Catering Experiences</title>
+    <link rel="stylesheet" href="tucker.css">
+
+    <!-- Premium Google Fonts Hook -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link
+        href="https://googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">CHEF TUCKER</span>
+            </div>
+
+            <!-- Mobile Menu Burger Button -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#menu">On The Menu</a>
+                <a href="#bookings" class="nav-cta">Book An Experience</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Showcase Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Private Chef & Bespoke Catering Experiences in Abuja</h1>
+                <p>Crafting luxury culinary moments for your private dinners, corporate events, and intimate
+                    celebrations.</p>
+                <a href="#bookings" class="btn-primary">Book an Experience</a>
+            </div>
+            <div class="hero-image">
+                <div class="img-wrapper">
+                    <!-- Image of him standing proudly in front of his food -->
+                    <img src="chef1.jpg" alt="Chef Tucker Culinary Experience">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brief Introduction Hook -->
+    <section id="about" class="about-brief">
+        <div class="section-container">
+            <div class="about-text-center">
+                <h2>Elevating The Art Of Dining</h2>
+                <p>Every dish is built around elite flavors, pristine presentation, and a dedication to high-end
+                    hospitality. From intimate backyard brunches to luxury curated gatherings, we transform milestones
+                    into sensory experiences.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Block (On the Menu) -->
+    <section id="menu" class="gallery-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>On The Menu</h2>
+                <p>A glimpse into our recent gourmet creations and luxury food styling.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/chef5.jpg" alt="Gourmet Entree Presentation">
+                </div>
+                <div class="gallery-item">
+                    <img src="chef3.jpg" alt="Luxury Private Brunch Spread">
+                </div>
+                <div class="gallery-item">
+                    <img src="chef4.jpg" alt="Exquisite Dessert Composition">
+                </div>
+                <div class="gallery-item">
+                    <img src="chef2.jpg" alt="Curated Dining Table Setting">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- High-Converting Booking Inquiry Form -->
+    <section id="bookings" class="booking-section">
+        <div class="form-container">
+            <div class="form-header">
+                <h2>Secure Your Date</h2>
+                <p>Planning an event? Let us handle the menu. Fill out the brief form below, and we will get back to you
+                    with a custom proposal.</p>
+            </div>
+
+            <form id="bookingForm" class="booking-form">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" placeholder="Your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="eventType">Event Type</label>
+                    <select id="eventType" required>
+                        <option value="" disabled selected>Select event type</option>
+                        <option value="Private Dinner">Private Intimate Dinner</option>
+                        <option value="Birthday Party">Birthday / Milestone Party</option>
+                        <option value="Corporate Event">Corporate Gathering</option>
+                        <option value="Brunch Setup">Luxury Brunch Setup</option>
+                        <option value="Other">Other Event</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="guestCount">Estimated Guest Count</label>
+                    <input type="number" id="guestCount" min="1" placeholder="e.g. 10" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="eventDate">Event Date</label>
+                    <input type="date" id="eventDate" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Check Availability</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Segment -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; <span id="currentYear"></span> The Chef Tucker. Custom Concept Showcase created by
+                @Vicktourvayibz.</p>
+        </div>
+    </footer>
+
+    <script src="tucker.js"></script>
+</body>
+
+</html>
